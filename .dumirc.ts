@@ -17,19 +17,15 @@ export default defineConfig({
         },
         {
           title: '文档',
-          link: '/doc/dev',
+          link: '/doc/base-dev',
+        },
+        {
+          title: '开发技巧',
+          link: '/skill',
         },
         {
           title: '更新日志',
           link: '/changelog',
-        },
-        {
-          title: '官网',
-          link: 'https://xinadmin.cn',
-        },
-        {
-          title: '演示站',
-          link: 'https://demo.xinadmin.cn',
         },
       ],
     },
@@ -45,13 +41,20 @@ export default defineConfig({
         title: '相关资源',
         items: [
           {
-            title: 'thinkphp',
+            title: '小刘同学',
+            description: '开发作者',
+            url: 'https://xineny.cn/',
+            openExternal: true
+          },
+          {
+            title: 'Think PHP',
             description: '敏捷后台PHP框架',
             url: 'https://www.thinkphp.cn/',
             openExternal: true
           },
           {
             title: 'Ant Design',
+            description: 'React UI 组件库',
             url: 'https://ant.design',
             openExternal: true
           },
@@ -59,6 +62,18 @@ export default defineConfig({
             title: 'Umi',
             description: 'React 应用开发框架',
             url: 'https://umijs.org',
+            openExternal: true
+          },
+          {
+            title: 'Dumi',
+            description: '为组件研发而生的静态站点框架',
+            url: 'https://d.umijs.org/',
+            openExternal: true
+          },
+          {
+            title: 'Build Admin',
+            description: 'Vue + TP 优秀的开发框架',
+            url: 'https://buildadmin.com/',
             openExternal: true
           }
         ]
@@ -107,24 +122,13 @@ export default defineConfig({
     ],
     moreLinks: [
       {
-        text: 'Dumi',
-        link: 'https://d.umijs.org/'
+        text: '官网',
+        link: 'https://xinadmin.cn'
       },
       {
-        text: 'Ant Design',
-        link: 'https://ant.design/'
+        text: '演示站',
+        link: 'https://demo.xinadmin.cn'
       }
     ],
-    theme: {
-      component: {
-        Layout: {
-          /* 这里是你的组件 token */
-          headerHeight: 100,
-        },
-      },
-      token: {
-        headerHeight: 100,
-      }
-    }
   },
 })
