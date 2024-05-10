@@ -1,0 +1,95 @@
+.index-body {
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.banner {
+  margin: 80px 20px;
+  h1 {
+    font-size: 80px;
+  }
+  a {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  a:first-of-type{
+    background: #1677ff;
+    color: #ffffff;
+  }
+  a:last-of-type{
+    background: #fff;
+    color: #1677ff;
+  }
+}
+
+.index-video {
+  left: 0;
+  top: -20px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.characteristic {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: background .3s ease-in-out,box-shadow .3s ease-in-out;
+}
+
+.is_enter {
+  animation: nav-icon-enter .3s steps(16) forwards;
+}
+
+.is_leave {
+  animation: nav-icon-leave .1s steps(16) forwards;
+}
+
+@keyframes nav-icon-enter {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+@keyframes nav-icon-leave {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+
+.logo-group {
+  .logos {
+    padding: 20px;
+    width: 200px;
+    background: #fff;
+    box-shadow: 8px 8px 20px 0 rgba(55,99,170,.1), -8px -8px 20px 0 #fff, inset 0 4px 20px 0 hsla(0,0%,100%,.5);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100%;
+    max-width: 160px;
+    padding-top: 25%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain
+  }
+}
