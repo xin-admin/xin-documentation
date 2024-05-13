@@ -1,10 +1,33 @@
 ---
-group: 前端开发技巧
+group: 表格表单
 order: 0
-type: 表格表单
-title: XinTable
+title: XinTable 自定义表单渲染
 ---
 
-XinTable 是 XinAdmin 中及其重要的组件，它封装了 ProTable、BetaSchemaForm、权限等部分，使得我们只用一个 Json 就可以实现 CRUD 的全部功能
+XinTable 新增与编辑表单使用 Ant Design Pro Components 中的 SchemaForm， 接口与 SchemaForm 保持一致，详细参考[Schema Form - JSON 表单](https://procomponents.ant.design/components/schema-form)
 
-它包含三个模块，表格模块、新增表单、编辑表单
+`renderFormItem` 用来自定义表单项，自定义编辑模式，返回一个 ReactNode，会自动包裹 value 和 onChange
+
+示例代码
+
+```tsx | pure
+const columns: ProFormColumnsType<any>[] = [
+  {
+    title: '标题',
+    dataIndex: 'title',
+    initialValue: '必填',
+    formItemProps: {
+      rules: [
+        {
+          required: true,
+          message: '此项为必填项',
+        },
+      ],
+    },
+    renderFormItem: () => {
+      return <Input></Input>;
+    },
+    width: 'm',
+  },
+];
+```
