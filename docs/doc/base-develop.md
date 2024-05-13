@@ -128,7 +128,7 @@ ThinkPHP 后端控制器负责处理 HTTP 请求并返回响应。
 
 我们在 `app/admin/controller` 文件夹下新建文件 `HelloWord.php` 插入以下 PHP 代码
 
-```
+```php
 // app/admin/controller/HelloWord.php
 
 <?php
@@ -146,7 +146,7 @@ class HelloWord extends Controller
 
     public function index(): void
     {
-        return '你好世界'
+        return '你好世界';
     }
 }
 ```
@@ -157,7 +157,7 @@ class HelloWord extends Controller
 
 后端模型负责与数据库交互，获取数据，具体参考 Think 模型
 
-```
+```php
 // app/admin/model/HelloWordModel.php
 
 <?php
@@ -175,7 +175,7 @@ class HelloWordModel extends Model {
 
 使用 ThinkPHP 的验证功能可以确保后端接收到的数据是合法和正确的。
 
-```
+```php
 
 // app/admin/validate/HelloWordValidate.php
 
@@ -194,7 +194,7 @@ class HelloWordValidate extends Validate {
 
 ## 在控制器中使用验证器
 
-```
+```php
 
 // app/admin/controller/HelloWord.php 更新代码
 

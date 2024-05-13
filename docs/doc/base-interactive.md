@@ -96,7 +96,7 @@ const get = async () => {
 
 ### 在控制器中使用
 
-```shell
+```php
 // 继承后台基础控制器
 use app\common\controller\AdminController as Controller;
 
@@ -116,7 +116,7 @@ return $this->silent();
 
 ### 在其它地方使用，抛出 HTTP 响应，中断程序运行
 
-```shell
+```php
 // 引入 RequestJson;
 
 /**
