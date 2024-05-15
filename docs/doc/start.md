@@ -1,7 +1,4 @@
 ---
-group:
-  title: 基础
-  order: 0
 title: 快速上手
 order: 1
 ---

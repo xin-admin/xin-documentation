@@ -171,7 +171,7 @@ const Index = () => {
       <div className={'index-body'}>
         <div className={'banner'}>
           <h1>Xin Admin</h1>
-          <a href="/doc/base-start" style={{marginRight: 20}}>快速上手</a>
+          <a href="/doc/start" style={{marginRight: 20}}>快速上手</a>
           <a href="https://demo.xinadmin.cn" target={'_blank'}>查看演示</a>
         </div>
         <Row gutter={[20, 20]} style={{padding: '0 20px'}}>

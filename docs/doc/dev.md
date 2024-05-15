@@ -1,7 +1,4 @@
 ---
-group:
-  title: 基础
-  order: 0
 title: 环境准备
 order: 0
 ---
