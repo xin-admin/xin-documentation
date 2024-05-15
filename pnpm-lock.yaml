@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.17.0
     version: 5.17.0(react-dom@18.3.1)(react@18.3.1)
   dumi-theme-antd:
-    specifier: ^0.3.16
-    version: 0.3.16(@babel/core@7.24.5)(antd@5.17.0)(dumi@2.3.3)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
+    specifier: ^0.3.18
+    version: 0.3.18(@babel/core@7.24.5)(antd@5.17.0)(dumi@2.3.3)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
   prism-react-renderer:
     specifier: 1.3.5
     version: 1.3.5(react@18.3.1)
@@ -5007,8 +5007,8 @@ packages:
   /dumi-assets-types@2.3.0:
     resolution: {integrity: sha512-mM6UoGTgTNoo8lA4dwaIwoeSGT+4PeQeiFylr2+kCB5z3/7NEf7lIM4tqrAsEyzecE/HX0+w7Z78hnFZQ9k5vQ==}
 
-  /dumi-theme-antd@0.3.16(@babel/core@7.24.5)(antd@5.17.0)(dumi@2.3.3)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-5sYI+8KOK5OTyAqxWGqD59eOB4wWQ4f462P3UE2sZxEMRgKAav4zqeBh397ruUtnVcGi4J5vPO/N6ePTryOghA==}
+  /dumi-theme-antd@0.3.18(@babel/core@7.24.5)(antd@5.17.0)(dumi@2.3.3)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-SBj1Wn5uX1FRNsVZIzrA7T52GzS1dsH0FcqOKTKqGBuzdWD5V2IEYso12Oes6FV4xBmZwSovFXD999PZ0Yt4KQ==}
     peerDependencies:
       antd: ~5.7.0
       dumi: ~2.2.17
