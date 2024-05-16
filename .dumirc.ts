@@ -17,7 +17,7 @@ export default defineConfig({
         },
         {
           title: '文档',
-          link: '/doc/base-dev',
+          link: '/doc/dev',
         },
         {
           title: '开发技巧',

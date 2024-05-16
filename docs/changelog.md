@@ -3,6 +3,19 @@ order: 1
 title: 更新日志
 ---
 
+## v1.0.5
+
+`2024-05-16`
+
+- release: v1.0.5
+- feat: 新增邮箱登录，后台设置中配置邮箱信息
+- feat: 修改跨域中间件
+- feat: Taro 库更新
+- fix: 修改基础模型为 BaseModel
+- fix: 修改设置异常 throws
+- fix: 前后端 token 分离
+- fix: 文档错误
+
 ## v1.0.3
 
 `2024-05-07`
