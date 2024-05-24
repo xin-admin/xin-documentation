@@ -1,7 +1,7 @@
 ---
 group:
   title: 前端进阶
-  order: 1
+  order: 4
 title: 默认配置文件
 order: 6
 ---

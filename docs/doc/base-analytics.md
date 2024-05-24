@@ -1,7 +1,6 @@
 ---
 group:
   title: 基础
-  order: 1
 title: 站点统计
 order: 5
 ---

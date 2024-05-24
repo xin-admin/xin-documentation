@@ -1,7 +1,7 @@
 ---
 group:
   title: 后端进阶
-  order: 2
+  order: 5
 title: 权限校验
 order: 1
 ---

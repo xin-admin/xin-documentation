@@ -1,7 +1,6 @@
 ---
 group:
   title: 前端进阶
-  order: 1
 title: 路由
 order: 1
 ---

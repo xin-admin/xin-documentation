@@ -1,7 +1,7 @@
 ---
 group:
   title: 基础
-  order: 1
+  order: 3
 title: 权限控制
 order: 4
 ---

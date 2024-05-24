@@ -1,7 +1,6 @@
 ---
 group:
   title: 前端进阶
-  order: 1
 title: 表格开发
 order: 3
 ---
