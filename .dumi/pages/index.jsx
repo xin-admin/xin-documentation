@@ -257,8 +257,15 @@ const Index = () => {
         <div style={{textAlign: 'center', marginBottom: 20}}>
           <Text type="secondary">如果你在使用过程中有任何问题，都可以加入我们的官方qq群来解答</Text>
         </div>
-        <div style={{textAlign: 'center', marginBottom: '60px'}}>
-          <img src="https://file.xinadmin.cn/file/qqchat.jpg" width="300" alt="qq群"/>
+        <div className={'feedback'}>
+          <div>
+            <img src="https://file.xinadmin.cn/file/qqchat.jpg" height="200" alt="qq群"/>
+            <p>官方交流QQ群</p>
+          </div>
+          <div>
+            <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号"/>
+            <p>微信公众号</p>
+          </div>
         </div>
       </div>
     </ConfigProvider>
