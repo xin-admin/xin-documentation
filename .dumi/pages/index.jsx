@@ -23,8 +23,8 @@ const Index = () => {
     },
     {
       id: 2,
-      title: '响应式 Web',
-      content: '基于Ant Design 的 响应式主体开发，拥有优秀的响应式页面和菜单',
+      title: 'Swagger 文档',
+      content: '基于 Swagger-PHP 一键生成Api文档，支持UmiJs一键生成前端接口',
       iconName: 'icon-a-Group808'
     },
     {

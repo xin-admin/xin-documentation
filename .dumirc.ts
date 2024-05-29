@@ -24,6 +24,10 @@ export default defineConfig({
           link: '/skill',
         },
         {
+          title: 'Api文档',
+          link: 'https://demo.xinadmin.cn/docs.html',
+        },
+        {
           title: '更新日志',
           link: '/changelog',
         },
@@ -34,7 +38,7 @@ export default defineConfig({
     github: 'https://github.com/Xineny-liu/xinadmin',
     title: 'Xin Admin',
     docVersions: {
-      ['1.0.5']: ''
+      ['1.1.0']: ''
     },
     footerLinks: [
       {

@@ -11,7 +11,7 @@ title: 介绍
 
 ## ✨ 介绍
 
-基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，提供权限验证、用户分组、数据字典、可视化 CRUD 等便捷开发，
+基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，提供权限验证、用户分组、Swagger 文档、数据字典、可视化 CRUD 等便捷开发，
 遵循 Apache License 无需授权即可免费商用.
 
 <img src="https://file.xinadmin.cn/file/demo.png"/>
@@ -21,6 +21,10 @@ title: 介绍
 ### 🚀 Online 在线开发
 
 在线开发页面，支持一键生成 CRUD 代码，新增或编辑字段实时更新效果，预览效果，提供多种表单组件，支持 Mock 模拟数据，详细查看具体介绍。
+
+### 🧩 Swagger 文档
+
+基于 Swagger PHP 支持注解文档生成，搭配 UmiJs 前端可实现 0 接口 0 类型定义，一键生成 api 接口文件与 Ts 类型文件
 
 ### ✨ 命令行脚本
 
@@ -41,6 +45,10 @@ title: 介绍
 ### 🎟️ 插件化开发
 
 你可以将你的应用或者插件，通过安装包的的形式进行发布提供安装，也可以在我们的插件市场中选择需要的插件安装，具体请看 插件开发指引，你也可以申请加入开发者，与我们共建生态
+
+### 🎉 系统架构
+
+基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，不仅可以使你的技术更上一层楼，还可以体验科技带来的乐趣
 
 ## 项目截图
 
@@ -85,7 +93,7 @@ BPM 等，适用于商城、游戏、即时通信、业务管理、博客等领�
 
 ## 未来可期
 
-我将继续深耕技术，用我毕生所学，来努力维护好这个项目，相信不久的将来 Vue 版本也会出现在我们视野中。不仅如此，Think PHP 也不是后台的唯一选择，相信 Spring Boot 和 Laravel 等同样优秀
+我们正在努力维护这个项目，相信不久的将来 Vue 版本也会出现在我们视野中。不仅如此，Think PHP 也不是后台的唯一选择，相信 Spring Boot 和 Laravel 等同样优秀
 
 ### 即将上线
 
