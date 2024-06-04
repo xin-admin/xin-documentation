@@ -26,7 +26,7 @@ order: 2
 
 ## 新增页面
 
-页面文件的位置放在 `xin-web/src/pages` 目录下，它包含了前端 web 页面和后端 web 页面，本文以后端页面为例，需要你先在开发环境中登录到后台，以便实时预览开发效果
+页面文件的位置放在 `web/admin/src/pages` 目录下，它包含了前端 web 页面和后端 web 页面，本文以后端页面为例，需要你先在开发环境中登录到后台，以便实时预览开发效果
 
 <img description="前端页面目录" src="https://file.xinadmin.cn/doc/develop/1.png"  alt=""/>
 

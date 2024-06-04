@@ -49,12 +49,12 @@ enum ErrorShowType {
 
 ## 请求
 
-请求一般是由前端 js 发起的请求，我们约定前端请求接口目录 `xin_web\src\services`，所有的前端请求都在这里面定义
+请求一般是由前端 js 发起的请求，我们约定前端请求接口目录 `web\admin\src\services`，所有的前端请求都在这里面定义
 
 例如我们在前端定义接口：
 
 ```ts
-// xin_web\src\services\test 目录下新建文件 index.ts
+// web\admin\src\services\test 目录下新建文件 index.ts
 
 // 引入基础请求
 import { request } from '@umijs/max';
@@ -75,7 +75,7 @@ export async function saveUser(date: { [key: string]: any }) {
   });
 }
 
-// 在其它文件中发送请求 xin_web\src\pages\index.tsx
+// 在其它文件中发送请求 web\admin\src\pages\index.tsx
 import { getUser, saveUser } from '@/services/test';
 
 // 获取用户
@@ -106,7 +106,7 @@ return $this->success();
 return $this->warn();
 
 // 返回失败响应
-return $this->error(');
+return $this->error();
 
 // 返回没有任何状态的响应
 return $this->silent();

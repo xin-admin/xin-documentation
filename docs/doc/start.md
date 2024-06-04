@@ -42,111 +42,29 @@ https://gitee.com/xineny/xin-admin
 ```bash
 .
 ├─app           应用目录
-│  ├─controller      控制器目录
-│  ├─model           模型目录
-│  ├─ ...            更多类库目录
-│  │
-│  ├─common.php         公共函数文件
-│  └─event.php          事件定义文件
-│
-├─config                配置目录
-│  ├─app.php            应用配置
-│  ├─cache.php          缓存配置
-│  ├─console.php        控制台配置
-│  ├─cookie.php         Cookie配置
-│  ├─database.php       数据库配置
-│  ├─filesystem.php     文件磁盘配置
-│  ├─lang.php           多语言配置
-│  ├─log.php            日志配置
-│  ├─middleware.php     中间件配置
-│  ├─route.php          URL和路由配置
-│  ├─session.php        Session配置
-│  ├─trace.php          Trace配置
-│  └─view.php           视图配置
-│
-├─view            视图目录
-├─route                 路由定义目录
-│  ├─route.php          路由定义文件
-│  └─ ...
-│
-├─public                WEB目录（对外访问目录）
-│  ├─index.php          入口文件
-│  ├─router.php         快速测试文件
-│  └─.htaccess          用于apache的重写
-├─extend                扩展类库目录
-├─runtime               应用的运行时目录（可写，可定制）
-├─vendor                Composer类库目录
-├─.example.env          环境变量示例文件
-├─composer.json         composer 定义文件
-├─LICENSE.txt           授权说明文件
-├─README.md             README 文件
-├─think                 命令行入口文件
+├─config        配置目录
+├─view          视图目录
+├─route         路由定义目录
+├─public        WEB目录（对外访问目录）
+│  ├─index.php     入口文件
+│  ├─router.php    快速测试文件
+│  └─.htaccess     用于apache的重写
+├─web           前端文件目录
+│  ├─admin         后台前端项目目录
+│  └─taro          taro项目目录
+├─runtime       应用的运行时目录（可写，可定制）
+├─.example.env  环境变量示例文件
+├─composer.json composer 定义文件
+├─LICENSE       授权说明文件
+├─README.md     README 文件
+├─think         命令行入口文件
 ```
 
-## 开发环境依赖安装
+## 后端项目启动
 
-1、修改项目配置文件中 开发环境 数据库 配置
-
-```json
-// 项目配置文件 project.json
-{
-  "name": "Xin Admin",
-  "description": "the new xin admin",
-  "version": "0.1-beta",
-  "require": {
-    "php": "8.1.0",
-    "nodejs": "^16.8.0",
-    "composer": "2.5.8"
-  },
-  "dev": {
-    // 数据库地址
-    "db_host": "127.0.0.1",
-    // 数据库名字
-    "db_name": "xin_admin",
-    // 数据库用户名
-    "db_user": "root",
-    // 数据库密码
-    "db_pass": "root",
-    // 数据库端口
-    "db_port": "3306"
-  }
-}
-```
-
-2、执行安装命令
+### 1、安装 PHP 依赖
 
 ```shell
-# 获取全部命令
-php run
-
-# 在项目根目录 执行安装脚本 前后端依赖包括数据库将自动安装
-php run install
-```
-
-安装脚本都做了什么？
-
-1. 检测基础环境是否安装完成，脚本会根据项目配置文件 `project.json` 中的环境版本来判断你的环境是否达到需求
-
-2. 检测数据库链接是否成功，获取项目配置文件 `project.json` `dev` 中的数据库信息，并且尝试链接他，链接成功之后会在后端项目目录创建 .env 环境变量
-
-3. 执行后端依赖安装，自动切换阿里云镜像，并且执行 `composer install`，依赖安装过程会很漫长，请耐心等待
-
-4. 执行前端项目依赖安装，脚本会自动切换阿里云镜像安装`pnpm`，安装成功后之后使用`pnpm inastall`来安装前端依赖，前端依赖安装过程会很漫长，请耐心等待
-
-5. 导入项目数据库文件
-
-:::warning
-如果安装失败请查看提示，并查阅[环境准备](/doc/dev)章节，查看环境是否准备完毕，或者手动安装依赖，也可以加入我们的官方群来寻求帮助
-:::
-
-## 手动安装依赖
-
-1、安装 PHP 依赖
-
-```shell
-# 切换到 PHP 项目目录
-cd ./xin-admin
-
 # 执行依赖安装命令
 composer install
 
@@ -154,11 +72,11 @@ composer install
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 ```
 
-2、导入数据库文件
+### 2、导入数据库文件
 
 新建数据库，并且导入项目根目录文件夹 ./database/install.sql 数据库文件
 
-3、 配置环境变量
+### 3、 配置环境变量
 
 复制后端项目文件夹中的 .example.env 文件 并 重命名为 .env
 
@@ -177,14 +95,22 @@ DB_CHARSET = utf8   # 编码
 DEFAULT_LANG = zh-cn# 语言
 # 用于 Crud 代码生成目录 相对于 应用根目录位置
 WEB_PATH = ../xin-web
-
 ```
 
-4、安装前端依赖
+### 4、运行后端项目
+
+```shell
+# 运行后端项目
+php think run
+```
+
+测试访问 `loaclhost:8000` 出现 json 即可
+
+## 安装前端依赖
 
 ```shell
 # 切换到 前端 项目目录
-cd ./xin-web
+cd ./web/admin
 
 # 执行安装 pnpm
 npm install -g pnpm
@@ -199,22 +125,11 @@ npm config set registry https://registry.npmmirror.com
 pnpm config set registry https://registry.npmmirror.com
 ```
 
-## 启动项目
-
 安装成功之后，你可以启动项目执行以下命令来启动项目
 
 ```shell
-# 切换到前端项目目录
-cd ./xin-web
-
 # 运行前端项目
 pnpm run dev
-
-# 切换到后端目录
-cd ./xin-admin
-
-# 运行后端项目
-php think run
 
 ```
 

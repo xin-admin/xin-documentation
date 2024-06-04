@@ -16,7 +16,7 @@ XinAdmin 采用 Umi Max 的布局与菜单，将项目分为 客户端 和 管�
 
 ## 默认配置
 
-项目文件 `xin-web/src/default/setting.ts` 保存着布局的默认配置，配置项参考 Ant Design 的 Layout [@ant-design/pro-layout](https://www.npmjs.com/package/@ant-design/pro-layout)
+项目文件 `web/admin/src/default/setting.ts` 保存着布局的默认配置，配置项参考 Ant Design 的 Layout [@ant-design/pro-layout](https://www.npmjs.com/package/@ant-design/pro-layout)
 
 ```ts | pure
 const Settings: ProLayoutProps & {
