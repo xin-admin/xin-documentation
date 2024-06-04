@@ -38,7 +38,7 @@ export default defineConfig({
     github: 'https://github.com/Xineny-liu/xinadmin',
     title: 'Xin Admin',
     docVersions: {
-      ['1.1.0']: ''
+      ['1.1.1']: ''
     },
     footerLinks: [
       {
