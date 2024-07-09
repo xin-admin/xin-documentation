@@ -37,3 +37,16 @@ order: 2
 - 解决办法：
   - 将所有资源文件放到 `assets` 文件夹中与 index.html 平级，index.html 引用 /assets/\*.js 等文件
   - 具体可以参考 Umi Js 的配置，在配置文件 `config/config.ts` 中的 `publicPath`
+
+## PHP 时运行报错
+
+![img.png](../../static/problem/img.png)
+
+- 问题描述：Fatal error: Uncaught TypeError: OpenApi\Generator::setProcessorPipeline(): Argument #1 ($processor) must be of type OpenApi\Pipeline, null given, called i
+
+该报错在 php swagger 4.9.4 中标记为 fix，之后版本已经修复，composer 镜像应该是没有同步。
+![img.png](../../static/problem/img1.png)
+
+- 解决办法：暂时关闭前端对 php swagger 的请求。
+
+![img.png](../../static/problem/img2.png)

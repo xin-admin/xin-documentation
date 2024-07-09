@@ -2,7 +2,9 @@ import {defineConfig} from 'dumi';
 
 export default defineConfig({
   favicons: ['https://file.xinadmin.cn/file/favicons.ico'],
-
+  analytics: {
+    baidu: 'adc452422402d1e6c2ae517dc09cb721'
+  },
   locales: [
     {id: 'zh-CN', name: '中文', suffix: ''},
   ],
