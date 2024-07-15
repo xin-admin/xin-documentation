@@ -31,7 +31,7 @@ export default defineConfig({
         },
         {
           title: '更新日志',
-          link: '/changelog',
+          link: 'https://gitee.com/xineny/xin-admin/commits/master',
         },
       ],
     },
@@ -40,7 +40,7 @@ export default defineConfig({
     github: 'https://github.com/Xineny-liu/xinadmin',
     title: 'Xin Admin',
     docVersions: {
-      ['1.1.2']: ''
+      ['V1']: ''
     },
     footerLinks: [
       {

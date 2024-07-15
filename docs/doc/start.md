@@ -72,11 +72,7 @@ composer install
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 ```
 
-### 2、导入数据库文件
-
-新建数据库，并且导入项目根目录文件夹 ./database/install.sql 数据库文件
-
-### 3、 配置环境变量
+### 2、 配置环境变量
 
 复制后端项目文件夹中的 .example.env 文件 并 重命名为 .env
 
@@ -95,6 +91,15 @@ DB_CHARSET = utf8   # 编码
 DEFAULT_LANG = zh-cn# 语言
 # 用于 Crud 代码生成目录 相对于 应用根目录位置
 WEB_PATH = ../xin-web
+```
+
+### 3、导入数据库文件
+
+运行 数据库迁移工具
+
+```shell
+# 运行后端项目
+php think migrate:run
 ```
 
 ### 4、运行后端项目
