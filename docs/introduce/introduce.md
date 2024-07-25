@@ -3,7 +3,7 @@ order: 1
 title: 介绍
 ---
 
-<h1 style="text-align: center;font-size: 60px">Xin Admin 中后台管理框架</h1>
+<h1 style="text-align: center;font-size: 60px">Xin Admin 全栈开发框架</h1>
 
 :::success{title='Apache License' }
 遵循 Apache License 无需授权即可免费商用
@@ -11,8 +11,10 @@ title: 介绍
 
 ## ✨ 介绍
 
-基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，提供权限验证、用户分组、Swagger 文档、数据字典、可视化 CRUD 等便捷开发，
-遵循 Apache License 无需授权即可免费商用.
+XinAdmin 是一个中后台开发框架，基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈，
+拥有权限验证、用户分组、Swagger 文档、数据字典、系统设置、文件系统、可视化 CRUD 等便捷开发功能，
+提供 Taro 多端小程序 解决方案。不仅可以让开发者体验到技术带来的便捷，提升自己技术栈，而且可以使开发者专注业务，减少重复代码的编写，节省时间。
+项目遵循 Apache License 无需授权即可免费商用。
 
 <img src="https://file.xinadmin.cn/file/demo.png"/>
 
@@ -20,49 +22,72 @@ title: 介绍
 
 ### 🚀 Online 在线开发
 
-在线开发页面，支持一键生成 CRUD 代码，新增或编辑字段实时更新效果，预览效果，提供多种表单组件，支持 Mock 模拟数据，详细查看具体介绍。
+在线开发页面，支持一键生成 CRUD 代码，一键生成控制器、模型、验证器以及前端页面，新增或编辑字段实时更新效果，预览效果，提供多种表单组件，支持 Mock 模拟数据。
 
 ### 🧩 Swagger 文档
 
 基于 Swagger PHP 支持注解文档生成，搭配 UmiJs 前端可实现 0 接口 0 类型定义，一键生成 api 接口文件与 Ts 类型文件
 
-### ✨ 命令行脚本
+### 📟 权限控制系统
 
-项目自带一套 PHP 命令行脚本，支持一键依赖安装，自动执行 Composer 依赖安装 和 NPM 依赖安装，一键打包部署，让你不在为复杂的准备工作头疼，支持命令行安装和更新模块和插件
+我们提供了完善的权限验证系统，支持客户端、管理端，双动态菜单，权限路由菜单、页面按钮级权限控制，不再为路由的配置烦恼，使用 PHP8 注解验证精确控制接口请求。
+
+### ♻️ 数据字典和全局设置
+
+强大的数据字典，支持 CRUD 生成，value、label 映射，支持标签、文字、徽标三种表格展示类型，多种显示状态，还有方便的系统配置，对系统配置后台一键管理。
 
 ### 🎨 React 技术栈
 
 我们使用了 阿里 Umi Js 以及 AntdPro 组件库，不仅简单易用，并且可以是你的技术更上一层楼，带你体验技术的革新，站在巨人肩膀上享受开发的便捷和乐趣。
 
-### 📟 权限控制系统
+### 🌺 Taro 多端小程序
 
-我们提供了完善的权限验证系统，支持客户端、管理端，双动态菜单，页面按钮级权限控制，使用 PHP8 注解验证精确控制接口请求，支持分组权限禁用继承。
-
-### ♻️ 数据字典和全局设置
-
-强大的数据字典，支持 CRUD 生成，value、label 映射，支持标签、文字、徽标三种表格展示类型，多种显示状态，还有方便的系统配置。
-
-### 🎟️ 插件化开发
-
-你可以将你的应用或者插件，通过安装包的的形式进行发布提供安装，也可以在我们的插件市场中选择需要的插件安装，具体请看 插件开发指引，你也可以申请加入开发者，与我们共建生态
+XinAdmin 包含了 Taro 多端小程序演示项目，提供 H5 解决方案，可以基于 XinTaro 开发 微信、支付宝小程序，甚至使安卓、鸿蒙 App 应用。
 
 ### 🎉 系统架构
 
 基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，不仅可以使你的技术更上一层楼，还可以体验科技带来的乐趣
 
-## 项目截图
+## 项目截图预览
 
-#### 在线开发 CRUD 代码一键生成 和 预览
+<ImagePreview float>
+  <img width="500px" src="https://file.xinadmin.cn/file/crud.png" alt=""/>
+</ImagePreview>
+【CRUD表格开发】通过对表格组件的操作、字段以及文件生成配置，一键开发基于查询、新增、编辑、删除等表单表格操作，并且可以进行高度的自定义配置，在线开发 CRUD 代码一键生成代码 和 预览效果，mock 模拟表格数据，更便于使用者者进行开发
 
-<img src="https://file.xinadmin.cn/file/crud.png"/>
+- 基于 XinTable 增删该查一个对象即可完全配置
+- 支持表格功能设置，新增、编辑、删除、查询等操作的开关
+- 支持分页配置，操作栏配置，以及查询配置
+- 支持字段完整配置，支持单选、多选、输入框等多种字段类型
+- 支持表格预览、mock 数据模拟
 
-#### 多模板门户页面，可直接当作公司官网或者项目首页，还有更多插件模板
+<br>
 
-<img src="https://file.xinadmin.cn/file/index.png"/>
+<ImagePreview float>
+  <img src="https://file.xinadmin.cn/file/rule.png" alt=""/>
+</ImagePreview>
+【权限菜单配置】XinAdmin 主 View 项目采用UmiJs 的动态路由配置，文件系统即路由，并且通过UmiJs 插件前后端文件分组，在后端进行添加菜单路由以及权限配置，可以实现页面、模块、按钮级权限控制
+并且拥有管理端（后台）和用户端（前台）两套权限控制。
 
-#### 字典配置，支持多中种状态
+- 基于 UmiJs 的动态路由，不必手动定义路由，免去路由配置的烦恼
+- 文件路径即路由地址，支持路由菜单隐藏，权限开启关闭
+- 支持多语言配置、支持无限级子节点
 
-<img src="https://file.xinadmin.cn/file/dict.png"/>
+<br>
+
+<ImagePreview float>
+  <img src="https://file.xinadmin.cn/file/index.png"/>
+</ImagePreview>
+多模板门户页面，可直接当作公司官网或者项目首页，还有更多插件模板
+
+<br>
+
+<ImagePreview float>
+  <img src="https://file.xinadmin.cn/file/dict.png"/>
+</ImagePreview>
+字典配置，支持多中种状态
+
+<br>
 
 ### 你的 Star 是我熬夜敲键盘更新文档和代码的动力
 
