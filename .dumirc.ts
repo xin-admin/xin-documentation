@@ -22,6 +22,10 @@ export default defineConfig({
           link: '/doc/dev',
         },
         {
+          title: '常见问题',
+          link: '/problem',
+        },
+        {
           title: '开发技巧',
           link: '/skill',
         },

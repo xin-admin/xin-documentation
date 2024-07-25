@@ -11,15 +11,15 @@ order: 0
 | :--: | :------: | :-------: | :---------------------------------------------------------------------------: |
 |  1   |   PHP    | >= 8.2.0  |   <a href="https://www.php.net/" target="_blank" rel="noreferrer">官网</a>    |
 |  2   |  Mysql   |  >= 5.7   | <a href="https://www.mysql.com/cn/" target="_blank" rel="noreferrer">官网</a> |
-|  3   |  NodeJs  |   >= 16   |    <a href="https://nodejs.org/" target="_blank" rel="noreferrer">官网</a>    |
+|  3   |  NodeJs  |   >= 18   |    <a href="https://nodejs.org/" target="_blank" rel="noreferrer">官网</a>    |
 |  4   |   Npm    | >= 6.14.0 |  <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer">官网</a>   |
 |  5   | Composer | >= 2.5.8  | <a href="https://getcomposer.org/" target="_blank" rel="noreferrer">官网</a>  |
 
-## Node Js 安装
+## Node 环境安装
 
 如果您电脑未安装 <a href="https://nodejs.org/" target="_blank" rel="noreferrer">Node.js</a>，请安装它。
 
-如果你需要同时存在多个 node 版本，可以使用 Nvm 或者其他工具进行 Node.js 进行版本管理；node 版本过于超前也可能会出现问题。
+如果你需要同时存在多个 node 版本，windows 用户可以使用 Nvm 进行 Node.js 进行版本管理；node 版本过于超前也可能会出现问题。
 
 ##### 验证是否安装成功
 
@@ -33,9 +33,16 @@ npm -v
 node -v
 ```
 
-:::warning
-我们推荐并且默认使用 pnpm 来安装依赖，建议你也这样做。如果你不清楚前端的包管理器，请忽略这条提示，我们的一键安装脚本会自动帮你安装。
-:::
+##### pnpm 安装，我们推荐并且默认使用 pnpm 来安装依赖，建议你也这样做。
+
+```shell
+# 全局安装 PNPM
+npm install -g pnpm
+
+# 验证是否安装成功
+pnpm -v
+# 出现对应版本即可
+```
 
 ## PHP 安装
 

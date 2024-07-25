@@ -18,21 +18,26 @@ PHP 框架: <a href="https://doc.thinkphp.cn/" target="_blank" rel="noreferrer">
 
 ## 获取项目
 
-1、克隆项目到本地目录，你可能需要安装 <a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git" target="_blank" rel="noreferrer">Git</a>
+方法 1：克隆项目到本地目录，你可能需要安装 <a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git" target="_blank" rel="noreferrer">Git</a>，
+我们推荐你使用 git 对项目进行版本管理，也建议你 fork XinAdmin 项目以便更新最新版 XinAdmin
 
 ```shell
 # 新建项目文件夹
 
 # 在文件夹中打开命令行执行
 git clone https://gitee.com/xineny/xin-admin.git
+# or
+git clone https://github.com/xiaoliu978/Xin-Admin.git
 
 ```
 
-2、直接下载项目压缩包，到本地解压
+方法 2：直接下载项目压缩包，到本地解压
 
 ```shell
 # 下载地址
 https://gitee.com/xineny/xin-admin
+# or
+https://github.com/xiaoliu978/Xin-Admin
 ```
 
 ## 项目目录
@@ -69,15 +74,17 @@ https://gitee.com/xineny/xin-admin
 composer install
 
 # 如果安装速度较慢可以先切换阿里镜像源，安装失败或提示版本不存在请多换几个镜像重试！！！
-composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-composer        https://packagist.org
-phpcomposer     https://packagist.phpcomposer.com
-aliyun          https://mirrors.aliyun.com/composer
-tencent         https://mirrors.cloud.tencent.com/composer
-huawei          https://mirrors.huaweicloud.com/repository/php
-laravel-china   https://packagist.laravel-china.org
-cnpkg           https://php.cnpkg.org
-sjtug           https://packagist.mirrors.sjtug.sjtu.edu.cn
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/  # 切换阿里云镜像
+# 镜像地址
+# composer        https://packagist.org  官方镜像
+# phpcomposer     https://packagist.phpcomposer.com 中文镜像
+# aliyun          https://mirrors.aliyun.com/composer 阿里云镜像
+# tencent         https://mirrors.cloud.tencent.com/composer 腾讯云镜像
+# huawei          https://mirrors.huaweicloud.com/repository/php 华为云镜像
+# 其它镜像
+# laravel-china   https://packagist.laravel-china.org
+# cnpkg           https://php.cnpkg.org cnpkg
+# sjtug           https://packagist.mirrors.sjtug.sjtu.edu.cn
 ```
 
 ### 2、 配置环境变量
@@ -98,7 +105,7 @@ DB_PORT = 3306      # 数据库端口号
 DB_CHARSET = utf8   # 编码
 DEFAULT_LANG = zh-cn# 语言
 # 用于 Crud 代码生成目录 相对于 应用根目录位置
-WEB_PATH = ../xin-web
+WEB_PATH = ./web/admin
 ```
 
 ### 3、导入数据库文件
@@ -125,10 +132,7 @@ php think run
 # 切换到 前端 项目目录
 cd ./web/admin
 
-# 执行安装 pnpm
-npm install -g pnpm
-
-# 使用pnpm 安装依赖
+# 使用pnpm 安装依赖 ，如果你没有安装 pnpm 请参阅环境准备一章安装环境变量
 pnpm install
 
 # 如果安装速度较慢可以切换npm和pnpm镜像
