@@ -68,8 +68,16 @@ https://gitee.com/xineny/xin-admin
 # 执行依赖安装命令
 composer install
 
-# 如果安装速度较慢可以先切换阿里镜像源
+# 如果安装速度较慢可以先切换阿里镜像源，安装失败或提示版本不存在请多换几个镜像重试！！！
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+composer        https://packagist.org
+phpcomposer     https://packagist.phpcomposer.com
+aliyun          https://mirrors.aliyun.com/composer
+tencent         https://mirrors.cloud.tencent.com/composer
+huawei          https://mirrors.huaweicloud.com/repository/php
+laravel-china   https://packagist.laravel-china.org
+cnpkg           https://php.cnpkg.org
+sjtug           https://packagist.mirrors.sjtug.sjtu.edu.cn
 ```
 
 ### 2、 配置环境变量

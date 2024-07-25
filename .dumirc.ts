@@ -113,14 +113,12 @@ export default defineConfig({
         ]
       },
       {
-        title: '更多产品',
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg',
+        title: '相关项目',
         items: [
           {
-            icon: 'https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg',
-            title: 'Xin Cms',
+            title: 'dumi-theme-antd',
             url: '',
-            description: '即将发布',
+            description: 'dumi 主题插件',
             openExternal: true
           },
         ]
