@@ -43,7 +43,7 @@ const Index = () => {
     {
       id: 6,
       title: '系统架构',
-      content: '基于 ThinkPhP 和 Ant Design，强大且实用，也可以让你的技术栈更上一层楼',
+      content: '基于 PHP8.2 和 React，强大且实用，也可以让你的技术栈更上一层楼',
       iconName: 'icon-jiagou'
     },
   ]
