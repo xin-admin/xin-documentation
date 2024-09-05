@@ -3,6 +3,10 @@ order: 3
 title: 加入我们
 ---
 
+:::success
+良好的开源项目，需要各位开发者共同发展！我们诚邀并且欢迎你加入我们的开源项目，一起为技术的发展和开源社区做贡献！
+:::
+
 ### 成为项目维护者
 
 你可以在 Github 上通过完成 [issues](https://github.com/xiaoliu978/Xin-Admin/issues) 或者 提交有利项目发展的 [Pull Requests](https://github.com/xiaoliu978/Xin-Admin//pulls) 来成为项目的共建者或者维护者

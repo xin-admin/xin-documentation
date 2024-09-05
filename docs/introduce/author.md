@@ -17,7 +17,7 @@ QQ: `2302563948`
 
 Gitee: [https://gitee.com/xineny](https://gitee.com/xineny)
 
-GitHub: [https://gitee.com/xineny](https://gitee.com/xineny)
+GitHub: [https://github.com/xiaoliu978](https://github.com/xiaoliu978)
 
 QQ 群：
 
