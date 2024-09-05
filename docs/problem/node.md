@@ -1,7 +1,11 @@
 ---
 order: 2
-title: Nodejs安装及环境配置
+title: Node 安装及环境配置
 ---
+
+## 前言
+
+Node.js 是一个免费、开源、跨平台的 JavaScript 运行时环境， 允许开发人员在浏览器之外编写命令行工具和服务器端脚本，npm 是 Node.js 的标准包管理器，它最初是一种下载和管理 Node.js 包依赖的方法，但后来也成为前端 JavaScript 中使用的工具。
 
 :::info
 使用 nvm 来管理 node js 更方便，如果你使用 nvm 可以忽略 node js 与 nvm 的安装
