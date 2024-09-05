@@ -10,7 +10,7 @@ order: 4
 ## 什么是 CRUD ?
 
 :::info{title=什么是 CRUD}
-CRUD 是增加(Create)、检索(Retrieve)、更新(Update)和删除(Delete)几个单词的首字母简写，BuildAdmin 实现了可视化生成 CRUD 代码的功能，请参考下方介绍使用。
+CRUD 是增加(Create)、检索(Retrieve)、更新(Update)和删除(Delete)几个单词的首字母简写，XinAdmin 实现了可视化生成 CRUD 代码的功能，请参考下方介绍使用。
 :::
 <img src="https://xinadmin.oss-cn-beijing.aliyuncs.com/file/crud.png"/>
 
