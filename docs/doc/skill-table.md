@@ -1,5 +1,10 @@
 ---
-group: 表格表单
+group:
+  title: 开发技巧
+  order: 6
+type:
+  title: 表单表格
+  order: 0
 order: 0
 title: XinTable 自定义表单渲染
 ---

@@ -24,15 +24,7 @@ export default defineConfig({
         {
           title: '常见问题',
           link: '/problem',
-        },
-        {
-          title: '开发技巧',
-          link: '/skill',
-        },
-        {
-          title: '更新日志',
-          link: 'https://gitee.com/xineny/xin-admin/commits/master',
-        },
+        }
       ],
     },
     logo: 'https://file.xinadmin.cn/file/favicons.ico',
