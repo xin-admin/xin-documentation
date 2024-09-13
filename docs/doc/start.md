@@ -55,8 +55,6 @@ https://github.com/xiaoliu978/Xin-Admin
 │  ├─router.php    快速测试文件
 │  └─.htaccess     用于apache的重写
 ├─web           前端文件目录
-│  ├─admin         后台前端项目目录
-│  └─taro          taro项目目录
 ├─runtime       应用的运行时目录（可写，可定制）
 ├─.example.env  环境变量示例文件
 ├─composer.json composer 定义文件
@@ -130,7 +128,7 @@ php think run
 
 ```shell
 # 切换到 前端 项目目录
-cd ./web/admin
+cd ./web
 
 # 使用pnpm 安装依赖 ，如果你没有安装 pnpm 请参阅环境准备一章安装环境变量
 pnpm install

@@ -108,9 +108,6 @@ return $this->warn();
 // 返回失败响应
 return $this->error();
 
-// 返回没有任何状态的响应
-return $this->silent();
-
 ```
 
 ### 在其它地方使用，抛出 HTTP 响应，中断程序运行
@@ -130,16 +127,13 @@ return $this->silent();
 use RequestJson;
 
 // 抛出成功响应
-$this->success('暂无权限',[],200,'throw');
+$this->throwSuccess('');
 
 // 抛出警告响应
-$this->warn('暂无权限',[],200,'throw');
+$this->throwWarn('');
 
 // 抛出失败响应
-$this->error('暂无权限',[],200,'throw');
-
-// 抛出没有任何状态的响应
-$this->silent('暂无权限',[],200,'throw');
+$this->throwError('');
 
 ```
 
