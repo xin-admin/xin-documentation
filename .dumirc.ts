@@ -24,6 +24,10 @@ export default defineConfig({
         {
           title: '常见问题',
           link: '/problem',
+        },
+        {
+          title: '皓量云擎',
+          link: 'https://haoliangyun.com/'
         }
       ],
     },
