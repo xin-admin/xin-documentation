@@ -27,7 +27,7 @@ export default defineConfig({
         },
         {
           title: '皓量云擎',
-          link: 'https://haoliangyun.com/'
+          link: 'https://www.haoliangyun.com/?aff=tK3srG'
         }
       ],
     },
