@@ -1,49 +1,62 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './index.less';
-import {Card, Col, ConfigProvider, Row, Segmented, Space, Typography} from 'antd';
-import {createFromIconfontCN} from '@ant-design/icons';
+import { Card, Col, ConfigProvider, Row, Segmented, Space, Typography } from 'antd';
+import { createFromIconfontCN } from '@ant-design/icons';
 import thinkphp from '../../static/logo/thinkphp.png';
-import antd from '../../static/logo/antd.png';
-import umijs from '../../static/logo/umijs.png';
+import haoliangyunqing from '../../static/logo/haoliangyunqing.jpg';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: ['//at.alicdn.com/t/c/font_1930408_25cmzfo9vn3.js']
 });
 
-const {Text} = Typography;
+const { Text } = Typography;
 const Index = () => {
-  const logos = [thinkphp, antd, umijs]
+  const logos = [
+    {
+      logo: thinkphp,
+      link: 'https://www.thinkphp.cn/'
+    },
+    {
+      logo: haoliangyunqing,
+      link: 'https://www.haoliangyun.com/?aff=tK3srG'
+    }
+  ]
 
   const cardData = [
     {
       id: 1,
       title: '全栈开发框架',
-      content: '拥有前台门户、前台用户端、后台管理系统、App、小程序等全栈解决方案',
+      content: '拥有前台门户、前台用户端、后台管理系统、App、多端小程序等全栈解决方案，更方便的开阔你的业务。',
       iconName: 'icon-kuangjia'
     },
     {
       id: 2,
-      title: 'Swagger 文档',
-      content: '基于 Swagger-PHP 一键生成Api文档，支持UmiJs一键生成前端接口',
-      iconName: 'icon-a-Group808'
+      title: '响应式页面',
+      content: '使用 Ant Design 作为前端框架，不仅具备响应式页面，而且贴合阿里系设计风格，让你的管理系统更漂亮。',
+      iconName: 'icon-a-Group801'
+    },
+    {
+      id: 3,
+      title: '丰富功能特性',
+      content: '包含完善的权限菜单管理、数据字典、文件系统、系统监控、系统设置等功能方便开发者们开发。',
+      iconName: 'icon-paidui'
     },
     {
       id: 4,
-      title: '权限验证',
-      content: ' 完善的双端权限验证，支持无限级菜单，以及页面按钮级权限控制 ',
-      iconName: 'icon-a-Group796'
+      title: '前后端分离',
+      content: '系统采用前后端分离架构，API 开发规范，使前后端代码互不干扰，并且拥有完善的错误处理和响应机制。',
+      iconName: 'icon-a-Group789'
     },
-    {id: 5, title: '数据字典', content: '强大且实用的数据字典，支持设置数据展示状态。', iconName: 'icon-cengji'},
     {
-      id: 7,
-      title: '文件系统',
-      content: '拥有完善的文件系统，支持图片、视频、压缩包等文件格式上传',
-      iconName: 'icon-a-Group807'
+      id: 5,
+      title: 'CRUD 代码生成',
+      content: '可视化设计前端表格、搜索、表单页面，一键生成后台增删改查代码，自动创建数据表，可为你节省大量时间。',
+      iconName: 'icon-a-Group808'
     },
     {
       id: 6,
       title: '系统架构',
-      content: '基于 PHP8.2 和 React，强大且实用，也可以让你的技术栈更上一层楼',
+      content: '基于 PHP8.2 和 TypeScript，丰富的IDE支持，对新手也非常友好，强大且实用，可用于大型商业化项目。',
       iconName: 'icon-jiagou'
     },
   ]
@@ -135,7 +148,7 @@ const Index = () => {
     return {
       label: (
         <div
-          style={{padding: '20px 0'}}
+          style={{ padding: '20px 0' }}
           onMouseEnter={() => {
             setIconHoverId(item.id)
           }}
@@ -143,9 +156,9 @@ const Index = () => {
             setIconHoverId(0)
           }}
         >
-          <div style={{backgroundImage: 'url(' + item.headIcon + ')'}}
-               className={'characteristic ' + (iconHoverId === item.id ? 'is_enter' : 'is_leave')}></div>
-          <div style={{width: '100%', textAlign: 'center', marginTop: 10}}>{item.headTitle}</div>
+          <div style={{ backgroundImage: 'url(' + item.headIcon + ')' }}
+            className={'characteristic ' + (iconHoverId === item.id ? 'is_enter' : 'is_leave')}></div>
+          <div style={{ width: '100%', textAlign: 'center', marginTop: 10 }}>{item.headTitle}</div>
         </div>
       ),
       value: item.key,
@@ -167,24 +180,25 @@ const Index = () => {
       }}
     >
       <video src="https://file.xinadmin.cn/file/6f00b0cbbbbc2f1c714db7bd7f8a8d52.mp4" className={'index-video'} muted
-             autoPlay loop/>
+        autoPlay loop />
       <div className={'index-body'}>
         <div className={'banner'}>
           <h1>Xin Admin</h1>
-          <a href="/doc/start" style={{marginRight: 20}}>快速上手</a>
+          <p>基于流行技术栈（Think、Laravel、Webman) + React + Ant Design + Umijs 开发的中后台管理框架</p>
+          <a href="/doc/start" style={{ marginRight: 20 }}>快速上手</a>
           <a href="https://demo.xinadmin.cn" target={'_blank'}>查看演示</a>
         </div>
-        <Row gutter={[20, 20]} style={{padding: '0 20px'}}>
+        <Row gutter={[20, 20]} style={{ padding: '0 30px' }}>
           {cardData.map((item) => (
             <Col key={item.id} xs={12} sm={8} md={8} lg={6} xl={4} xxl={4}>
               <Card
                 size={'small'}
-                style={{border: '2px solid #fff',}}
+                style={{ border: '2px solid #fff', }}
                 bordered={false}
-                styles={{body: {height: '96px'}}}
+                styles={{ body: { height: '112px' }, title: { height: '46px', display: 'flex', alignItems: "center" } }}
                 title={
                   <Space>
-                    <IconFont type={item.iconName} style={{fontSize: '28px'}}/>
+                    <IconFont type={item.iconName} style={{ fontSize: '28px' }} />
                     {item.title}
                   </Space>
                 }
@@ -197,10 +211,10 @@ const Index = () => {
           ))}
         </Row>
 
-        <h1 style={{textAlign: 'center', marginTop: 60, marginBottom: 0}}>
+        {/* <h1 style={{ textAlign: 'center', marginTop: 60, marginBottom: 0 }}>
           面向丰富业务场景的全栈解决方案
         </h1>
-        <div style={{textAlign: 'center', marginBottom: 20}}>
+        <div style={{ textAlign: 'center', marginBottom: 20 }}>
           <Text type="secondary">仅作为案例参考</Text>
         </div>
 
@@ -208,7 +222,7 @@ const Index = () => {
           rootClassName={'index-segmented'}
           block
           options={characteristicOption}
-          style={{padding: '0 20px', marginBottom: 20}}
+          style={{ padding: '0 20px', marginBottom: 20 }}
           onChange={(value) => {
             programmeList.forEach((item) => {
               if (item.key === value) {
@@ -219,51 +233,53 @@ const Index = () => {
           }}
         />
 
-        <Card style={{border: '2px solid #f3f5f8', margin: '0 20px'}} title={programmeData.title}>
+        <Card style={{ border: '2px solid #f3f5f8', margin: '0 20px' }} title={programmeData.title}>
           <Row>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <Space direction={'vertical'} size={'small'}>
                 {programmeContent.map((item) => (
                   <div key={item}>
-                    <Text type="secondary">{item}</Text><br/>
+                    <Text type="secondary">{item}</Text><br />
                   </div>
                 ))}
               </Space>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}
-                 style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center'}}>
-              <img src={programmeData.img} alt={programmeData.title} style={{height: '300px', padding: '20px 0'}}/>
+              style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center' }}>
+              <img src={programmeData.img} alt={programmeData.title} style={{ height: '300px', padding: '20px 0' }} />
             </Col>
           </Row>
-        </Card>
+        </Card> */}
 
-        <h1 style={{textAlign: 'center', marginTop: 60, marginBottom: 0}}> 鸣谢单位和赞助商列表 </h1>
-        <div style={{textAlign: 'center', marginBottom: 20}}>
-          <Text type="secondary">如果你发现我们使用了你的技术，请联系作者添加，因为工作量较大，暂未统计所有</Text>
+        <h1 style={{ textAlign: 'center', marginTop: 60, marginBottom: 0 }}> 金牌赞助商 </h1>
+        <div style={{ textAlign: 'center', marginBottom: 20 }}>
+          <Text type="secondary">赞助商招商联系QQ：2302563948，备注来意</Text>
         </div>
 
-        <div style={{margin: '0 20px', background: '#fff', padding: '40px 20px', borderRadius: '8px'}}>
+        <div style={{ margin: '0 20px', background: '#fff', padding: '40px 20px', borderRadius: '8px' }}>
           <Row justify="space-evenly" className={'logo-group'}>
-            {logos.map((src, index) => {
+            {logos.map((data, index) => {
               return (
                 <Col className={'logos'} key={index}>
-                  <div style={{backgroundImage: 'url(' + src + ')'}} className={'logo'}></div>
+                  <a href={data.link} target="_blank">
+                    <div style={{ backgroundImage: 'url(' + data.logo + ')' }} className={'logo'}></div>
+                  </a>
                 </Col>
               )
             })}
           </Row>
         </div>
-        <h1 style={{textAlign: 'center', marginTop: 60, marginBottom: 0}}> 反馈与共建 </h1>
-        <div style={{textAlign: 'center', marginBottom: 20}}>
+        <h1 style={{ textAlign: 'center', marginTop: 60, marginBottom: 0 }}> 反馈与共建 </h1>
+        <div style={{ textAlign: 'center', marginBottom: 20 }}>
           <Text type="secondary">如果你在使用过程中有任何问题，都可以加入我们的官方qq群来解答</Text>
         </div>
         <div className={'feedback'}>
           <div>
-            <img src="https://file.xinadmin.cn/file/qqchat.jpg" height="200" alt="qq群"/>
+            <img src="https://file.xinadmin.cn/file/qqchat.jpg" height="200" alt="qq群" />
             <p>官方交流QQ群</p>
           </div>
           <div>
-            <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号"/>
+            <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号" />
             <p>微信公众号</p>
           </div>
         </div>
