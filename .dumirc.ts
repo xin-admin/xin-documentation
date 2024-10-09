@@ -8,7 +8,6 @@ export default defineConfig({
   locales: [
     {id: 'zh-CN', name: '中文', suffix: ''},
   ],
-  mako: {},
   themeConfig: {
     name: 'Xin Admin',
     lastUpdated: true,
