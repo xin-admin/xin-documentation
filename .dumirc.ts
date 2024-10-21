@@ -18,7 +18,11 @@ export default defineConfig({
           link: '/introduce/introduce',
         },
         {
-          title: '文档',
+          title: 'Laravel 版文档',
+          link: '/laravel/dev',
+        },
+        {
+          title: 'Think 版文档',
           link: '/doc/dev',
         },
         {

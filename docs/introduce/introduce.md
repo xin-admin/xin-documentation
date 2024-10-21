@@ -11,7 +11,7 @@ title: 介绍
 
 ## ✨ 介绍
 
-XinAdmin 是一个中后台开发框架，基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈，
+XinAdmin 是一个中后台开发框架，基于 PHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈，
 拥有权限验证、用户分组、Swagger 文档、数据字典、系统设置、文件系统、可视化 CRUD 等便捷开发功能，
 提供 Taro 多端小程序 解决方案。不仅可以让开发者体验到技术带来的便捷，提升自己技术栈，而且可以使开发者专注业务，减少重复代码的编写，节省时间。
 项目遵循 Apache License 无需授权即可免费商用。
@@ -46,7 +46,7 @@ XinAdmin 包含了 Taro 多端小程序演示项目，提供 H5 解决方案，�
 
 ### 🎉 系统架构
 
-基于 ThinkPHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，不仅可以使你的技术更上一层楼，还可以体验科技带来的乐趣
+基于 PHP8 + React + TypeScript + UmiJs + Ant Design 等技术栈开发的后台管理系统，不仅可以使你的技术更上一层楼，还可以体验科技带来的乐趣
 
 ## 项目截图预览
 
