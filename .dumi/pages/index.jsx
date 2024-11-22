@@ -6,6 +6,8 @@ import thinkphp from '../../static/logo/thinkphp.png';
 import haoliangyunqing from '../../static/logo/haoliangyunqing.jpg';
 import thinklogo from '../../static/logo/think.svg';
 import tarologo from '../../static/logo/taro-logo.png';
+import wx from '../../static/wx.jpg';
+
 
 const IconFont = createFromIconfontCN({
   scriptUrl: ['//at.alicdn.com/t/c/font_1930408_25cmzfo9vn3.js']
@@ -239,6 +241,10 @@ const Index = () => {
           <div>
             <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号"/>
             <p>微信公众号</p>
+          </div>
+          <div>
+            <img src={wx} height="200" alt="微信群"/>
+            <p>微信群</p>
           </div>
         </div>
       </div>
