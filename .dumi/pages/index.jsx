@@ -1,55 +1,73 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.less';
-import { Card, Col, ConfigProvider, Row, Space, Typography } from 'antd';
-import {createFromIconfontCN, GithubFilled, GithubOutlined} from '@ant-design/icons';
+import {Card, Col, ConfigProvider, Row, Space, Typography} from 'antd';
+import {createFromIconfontCN} from '@ant-design/icons';
 import thinkphp from '../../static/logo/thinkphp.png';
-import haoliangyunqing from '../../static/logo/haoliangyunqing.jpg';
+import buildadmin from '../../static/logo/buildadmin.png';
+import laravel from '../../static/logo/laravel.png';
 import thinklogo from '../../static/logo/think.svg';
 import tarologo from '../../static/logo/taro-logo.png';
-import wx from '../../static/wx.jpg';
-
+import taro from '../../static/logo/taro.png';
+import antd from '../../static/logo/antd.png';
+import umi from '../../static/logo/umi.png';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: ['//at.alicdn.com/t/c/font_1930408_25cmzfo9vn3.js']
 });
 
-const { Text } = Typography;
+const {Text} = Typography;
 const Index = () => {
 
   const logos = [
+    {
+      logo: laravel,
+      link: 'https://laravel.com/'
+    },
     {
       logo: thinkphp,
       link: 'https://www.thinkphp.cn/'
     },
     {
-      logo: haoliangyunqing,
-      link: 'https://www.haoliangyun.com/?aff=tK3srG'
+      logo: taro,
+      link: 'https://taro.zone/'
+    },
+    {
+      logo: antd,
+      link: 'https://ant.design'
+    },
+    {
+      logo: umi,
+      link: 'https://umijs.org/'
+    },
+    {
+      logo: buildadmin,
+      link: 'https://buildadmin.com/'
     }
   ]
 
   const cardData = [
     {
       id: 1,
-      title: '全栈开发框架',
-      content: '拥有前台门户、前台用户端、后台管理系统、App、多端小程序等全栈解决方案，更方便的开阔你的业务。',
+      title: '全栈技术融合',
+      content: '前端 React + Umi 企业级架构，后端 Laravel/ThinkPHP 双引擎接入，Taro 移动多端统一编译。',
       iconName: 'icon-kuangjia'
     },
     {
       id: 2,
-      title: '响应式页面',
-      content: '使用 Ant Design 作为前端框架，不仅具备响应式页面，而且贴合阿里系设计风格，让你的管理系统更漂亮。',
+      title: '统一开发范式',
+      content: '前后端 API 标准化对接，API 文档一键生成，UI前端与Taro Request 完全兼容，开发更便利快捷。',
       iconName: 'icon-a-Group801'
     },
     {
       id: 3,
-      title: '丰富功能特性',
-      content: '包含完善的权限菜单管理、数据字典、文件系统、系统监控、系统设置等功能方便开发者们开发。',
+      title: '性能优化矩阵',
+      content: '高性能、高并发 Swoole 开箱即用，服务端预渲染(SSR)支持，请求、缓存多重优化，免去性能焦虑。',
       iconName: 'icon-paidui'
     },
     {
       id: 4,
       title: '前后端分离',
-      content: '系统采用前后端分离架构，API 开发规范，使前后端代码互不干扰，并且拥有完善的错误处理和响应机制。',
+      content: '前后端代码完全分离，代码互不干扰，团队协作开发更方便，助力业务逻辑实现。',
       iconName: 'icon-a-Group789'
     },
     {
@@ -60,8 +78,8 @@ const Index = () => {
     },
     {
       id: 6,
-      title: '系统架构',
-      content: '基于 PHP8.2 和 TypeScript，丰富的IDE支持，对新手也非常友好，强大且实用，可用于大型商业化项目。',
+      title: '企业级开发框架',
+      content: '基于 PHP8.2 和 TypeScript，丰富的IDE支持，强大且实用，可用于大型商业化项目，并且完全开源免费。',
       iconName: 'icon-jiagou'
     },
   ]
@@ -156,11 +174,11 @@ const Index = () => {
       }}
     >
       <video src="https://file.xinadmin.cn/file/6f00b0cbbbbc2f1c714db7bd7f8a8d52.mp4" className={'index-video'} muted
-        autoPlay loop />
+             autoPlay loop/>
       <div className={'index-body'}>
         <div className={'index-banner'}>
           <h1>Xin Admin</h1>
-          <p>基于流行技术栈（Think、Laravel、Webman) + React + Ant Design + Umijs 开发的中后台管理框架</p>
+          <p>兼具性能、开发体验、安全、快速、多态、全场景等多种优势的企业级快速开发框架</p>
           <a href="/doc/start" style={{marginRight: 20}}>快速上手</a>
           <a href="https://demo.xinadmin.cn" target={'_blank'}>查看演示</a>
         </div>
@@ -194,7 +212,10 @@ const Index = () => {
               <Card
                 style={{border: '2px solid #fff',}}
                 bordered={false}
-                styles={{body: {minHeight: '112px', padding: '20px 50px'}, title: {height: '46px', display: 'flex', alignItems: "center"}}}
+                styles={{
+                  body: {minHeight: '112px', padding: '20px 50px'},
+                  title: {height: '46px', display: 'flex', alignItems: "center"}
+                }}
                 title={
                   <Space>
                     <img src={item.logo} alt="logo" height={24} style={{maxWidth: '66px'}}/>
@@ -208,14 +229,14 @@ const Index = () => {
                 }
               >
                 <ul>
-                  {item.contents.map((item) => <li className={'versions-li'} >{item}</li>)}
+                  {item.contents.map((item) => <li className={'versions-li'}>{item}</li>)}
                 </ul>
               </Card>
             </Col>
           ))}
         </Row>
 
-        {blockTitle('金牌赞助商', '赞助商招商联系QQ：2302563948，备注来意')}
+        {blockTitle('赞助与鸣谢', '赞助商招商联系QQ：2302563948，备注来意')}
         <div style={{margin: '0 20px', background: '#fff', padding: '40px 20px', borderRadius: '8px'}}>
           <Row justify="space-between" className={'logo-group'}>
             {logos.map((data, index) => {
@@ -241,10 +262,6 @@ const Index = () => {
           <div>
             <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号"/>
             <p>微信公众号</p>
-          </div>
-          <div>
-            <img src={wx} height="200" alt="微信群"/>
-            <p>微信群</p>
           </div>
         </div>
       </div>
