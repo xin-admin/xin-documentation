@@ -5,6 +5,10 @@ order: 0
 
 # 环境准备
 
+:::info
+本章为开发环境准备，如需部署项目，请参考部署章节。
+:::
+
 ## 环境要求
 
 | 序号 |   环境   |   版本    |                                     官网                                      |
@@ -17,23 +21,21 @@ order: 0
 
 ## Node 环境安装
 
-:::info
-我们推荐你安装 nvm 来管理你的 node 版本，它可以在不同的 node 版本之间切换，查看[NVM 的安装和使用](/problem/nvm)
-:::
-
-如果您电脑未安装 <a href="https://nodejs.org/" target="_blank" rel="noreferrer">Node.js</a>，请安装它，如果你需要同时存在多个 node 版本，windows 用户可以使用 Nvm 进行 Node.js 进行版本管理，node 版本过于超前也可能会出现问题。
-
-验证是否安装成功
+NodeJs 是一个 JavaScript 运行环境，它拥有非常强大的包管理器，方便我们来管理我们项目的前端依赖， 如果您电脑未安装 <a href="https://nodejs.org/" target="_blank" rel="noreferrer">Node.js</a>，请安装它，本项目 node 版本为 v18.20.4 。你可以在 NodeJs 官网来安装 NodeJs，你也可以参考我们的技术文章：[Node 安装及环境配置](/problem/node)，安装完成后，通过在命令行中输入以下命令来验证 NodeJs 安装：
 
 ```shell
-# 在命令行或CMD中执行下列命令
-# 出现相应npm版本即可
-npm -v
-# 出现相应node版本即可
-node -v
+# 在命令行或CMD中执行下列命令，出现相应版本即可
+node -v # 输出：v18.20.4
+
+# 验证包管理器 npm 版本
+npm -v # 输出：10.7.0
 ```
 
-pnpm 安装，我们推荐并且默认使用 pnpm 来安装依赖，建议你也这样做。
+:::info
+如果你需要同时存在多个 node 版本，windows 用户可以使用 Nvm 进行 Node.js 进行版本管理，node 版本过于超前也可能会出现问题 ，我们推荐你安装 nvm 来管理你的 node 版本，它可以在不同的 node 版本之间切换，查看[NVM 的安装和使用](/problem/nvm)
+:::
+
+pnpm 是一个快速、节省磁盘空间的包管理工具，用于替代 npm 或 yarn，我们也推荐你使用 pnpm 来管理你的前端依赖。
 
 ```shell
 # 全局安装 PNPM
