@@ -3,8 +3,6 @@ title: 快速上手
 order: 1
 ---
 
-# 快速上手
-
 &nbsp;&nbsp;&nbsp;&nbsp;本项目的技术栈选用 laravel 和 ant design， 在开始之前，我想你应该已经熟练了解了 Html、Css、JavaScript 以及 PHP 的相关知识，在此前提之下，推荐你去了解以下相关文档及内容:
 JS 框架: <a href="https://react.docschina.org/" target="_blank" rel="noreferrer">React</a>、
 JS 框架: <a href="https://umijs.org/" target="_blank" rel="noreferrer">Umi Js</a>、
