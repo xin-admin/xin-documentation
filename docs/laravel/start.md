@@ -3,35 +3,59 @@ title: 快速上手
 order: 1
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;本项目的技术栈选用 laravel 和 ant design， 在开始之前，我想你应该已经熟练了解了 Html、Css、JavaScript 以及 PHP 的相关知识，在此前提之下，推荐你去了解以下相关文档及内容:
-JS 框架: <a href="https://react.docschina.org/" target="_blank" rel="noreferrer">React</a>、
-JS 框架: <a href="https://umijs.org/" target="_blank" rel="noreferrer">Umi Js</a>、
-React 组件库: <a href="https://ant.design/index-cn/" target="_blank" rel="noreferrer">Ant Design</a>、
-PHP 框架: <a href="https://laravel.com/" target="_blank" rel="noreferrer">Laravel</a>，当然我们也会在文档中尽可能的去详细的描述任何一个相关的知识点，以便新手也可以快速上手本项目
+# XinAdmin 快速上手指南
 
-:::warning
-如果你还没有基础的开发环境，建议你先阅读[环境准备](/laravel/dev)章节。如果你正在使用本项目，强烈建议你花几分钟时间阅读一下本文章！如果在安装过程中有任何错误，也请你加入我们的[官方 qq 群](/introduce/author#联系我)来获取帮助。
-:::
+## 技术栈概览
+
+XinAdmin 项目采用现代全栈技术架构：
+
+- **后端框架**：Laravel (PHP)
+- **前端框架**：React + UmiJS
+- **UI 组件库**：Ant Design
+
+在开始之前，请确保您具备以下基础知识：
+
+- HTML、CSS、JavaScript 基础
+- PHP 开发基础
+- 数据库基础知识
+
+### 推荐学习资源
+
+| 技术栈     | 说明               | 官方文档                                        |
+| ---------- | ------------------ | ----------------------------------------------- |
+| React      | 前端核心框架       | [React 文档](https://react.docschina.org/)      |
+| UmiJS      | React 应用开发框架 | [UmiJS 文档](https://umijs.org/)                |
+| Ant Design | React UI 组件库    | [Ant Design 文档](https://ant.design/index-cn/) |
+| Laravel    | PHP 后端框架       | [Laravel 文档](https://laravel.com/)            |
+
+:::warning{title="重要提示"}
+
+- 首次使用请先阅读[环境准备](/laravel/dev)章节
+- 遇到问题可加入[官方 QQ 群](/introduce/author#联系我)获取帮助
+  :::
 
 ## 获取项目
 
-- 方法 1：克隆项目到本地目录，你可能需要安装 <a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git" target="_blank" rel="noreferrer">Git</a>，
-  我们推荐你使用 git 对项目进行版本管理，也建议你 fork XinAdmin 项目以便更新最新版 XinAdmin
+### 方式一：Git 克隆（推荐）
 
-```shell
+```bash
 git clone https://github.com/xinfarme/Xin-Laravel.git
 ```
 
-- 方法 2：直接下载项目压缩包，到本地解压
+:::tip
+推荐先 Fork 项目到自己的仓库，这样可以方便接收上游更新。
+:::
+
+### 方式二：直接下载
+
+访问 XinAdmin 项目主页 下载最新版本的源码压缩包。
 
 ```shell
 # 下载地址
 https://github.com/xinfarme/Xin-Laravel
 ```
 
-## 项目目录
-
-下载或者解压之后你会看到这样一个文件目录
+## 项目结构
 
 <Tree>
   <ul>
