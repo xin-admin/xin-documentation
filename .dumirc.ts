@@ -31,6 +31,7 @@ export default defineConfig({
         }
       ],
     },
+    sidebarGroupModePath: true,
     logo: 'https://file.xinadmin.cn/file/favicons.ico',
     footer: 'Made with ❤️ by <a href="https://xineny.cn/" target="_blank">小刘同学</a> | <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备19035466号-1</a>',
     title: 'Xin Admin',
