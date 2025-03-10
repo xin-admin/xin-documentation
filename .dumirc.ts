@@ -9,6 +9,9 @@ export default defineConfig({
     {id: 'zh-CN', name: '中文', suffix: ''},
   ],
   themeConfig: {
+    socialLinks: {
+      github: 'https://github.com/xin-admin',
+    },
     name: 'Xin Admin',
     lastUpdated: true,
     nav: {

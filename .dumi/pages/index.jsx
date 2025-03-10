@@ -98,8 +98,8 @@ const Index = () => {
         '强大代码生成器。',
       ],
       github: {
-        icon: 'https://img.shields.io/github/stars/xinframe%2FXin-Laravel?style=flat&logo=github&logoColor=red&labelColor=%23f3f5f8&color=red',
-        url: 'https://github.com/xinframe/Xin-Laravel'
+        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-laravel?style=flat&logo=github&logoColor=red&labelColor=%23f3f5f8&color=red',
+        url: 'https://github.com/xin-admin/xin-laravel'
       },
     },
     {
@@ -115,8 +115,8 @@ const Index = () => {
         '强大代码生成器。'
       ],
       github: {
-        icon: 'https://img.shields.io/github/stars/xinframe%2FXin-Admin?style=flat&logo=github&logoColor=%23009e3c&labelColor=%23f3f5f8&color=%23009e3c',
-        url: 'https://github.com/xinframe/Xin-Admin'
+        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-think?style=flat&logo=github&logoColor=%23009e3c&labelColor=%23f3f5f8&color=%23009e3c',
+        url: 'https://github.com/xin-admin/xin-think'
       },
     },
     {
@@ -132,8 +132,8 @@ const Index = () => {
         '完善的TS开发体验。'
       ],
       github: {
-        icon: 'https://img.shields.io/github/stars/xinframe%2FXin-Taro?style=flat&logo=github&logoColor=%231183c4&labelColor=%23f3f5f8',
-        url: 'https://github.com/xinframe/Xin-Taro'
+        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-taro?style=flat&logo=github&logoColor=%231183c4&labelColor=%23f3f5f8',
+        url: 'https://github.com/xin-admin/xin-taro'
       },
     },
     {
@@ -147,8 +147,8 @@ const Index = () => {
         '欢迎大家共享开发文档与纠错。'
       ],
       github: {
-        icon: 'https://img.shields.io/github/stars/xinframe%2FXin-Documentation?style=flat&logo=github&logoColor=%231677ff&labelColor=%23f3f5f8&color=%231677ff',
-        url: 'https://github.com/xinframe/Xin-Documentation'
+        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-documentation?style=flat&logo=github&logoColor=%231677ff&labelColor=%23f3f5f8&color=%231677ff',
+        url: 'https://github.com/xin-admin/xin-documentation'
       },
     }
   ]
