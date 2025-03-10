@@ -170,18 +170,17 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ 
 ### 4、环境变量配置与数据导入
 
 ```shell
-# 依赖安装完成后，你可以通过执行 composer.json 中的 "post-root-package-install" 来执行下一步任务。
-# 具体命令如下，你也可以单独执行某一项。
-"post-root-package-install": [
-    # 复制环境变量文件
-    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-    # 创建文件储存链接 （用于文件存储的本地公共目录链接）
-    "@php artisan storage:link",
-    # 执行数据库迁移 （执行前请确保 .env 文件存在 并且已经配置好数据库 ）
-    "@php artisan migrate",
-    # 执行数据导入
-    "@php artisan db:seed"
-],
+# 依赖安装完成后，你可以通过执行 以下命令来完成 XinLaravel 的安装
+
+# 复制环境变量文件
+php -r "file_exists('.env') || copy('.env.example', '.env');"
+# 创建文件储存链接 （用于文件存储的本地公共目录链接）
+php artisan storage:link
+# 执行数据库迁移 （执行前请确保 .env 文件存在 并且已经配置好数据库 ）
+php artisan migrate
+# 执行数据导入
+php artisan db:seed
+
 ```
 
 ### 5、运行后端项目
