@@ -1,6 +1,6 @@
 ---
 title: 快速上手
-order: 1
+order: 2
 ---
 
 # 快速上手指南
@@ -39,7 +39,7 @@ XinAdmin 项目采用现代全栈技术架构：
 ### 方式一：Git 克隆（推荐）
 
 ```bash
-git clone https://github.com/xinfarme/Xin-Laravel.git
+git clone https://github.com/xin-admin/xin-laravel.git
 ```
 
 :::tip
@@ -52,7 +52,7 @@ git clone https://github.com/xinfarme/Xin-Laravel.git
 
 ```shell
 # 下载地址
-https://github.com/xinfarme/Xin-Laravel
+https://github.com/xin-admin/xin-laravel
 ```
 
 ## 项目结构
@@ -149,6 +149,9 @@ DB_PASSWORD=root        # 数据库密码
 ### 3、安装 PHP 依赖
 
 ```shell
+# 切换到项目根目录
+cd xin-laravel
+
 # 执行依赖安装命令
 composer install
 
@@ -174,10 +177,13 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ 
 
 # 复制环境变量文件
 php -r "file_exists('.env') || copy('.env.example', '.env');"
+
 # 创建文件储存链接 （用于文件存储的本地公共目录链接）
 php artisan storage:link
+
 # 执行数据库迁移 （执行前请确保 .env 文件存在 并且已经配置好数据库 ）
 php artisan migrate
+
 # 执行数据导入
 php artisan db:seed
 
