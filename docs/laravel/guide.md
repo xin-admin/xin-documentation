@@ -24,7 +24,7 @@ order: 0
 
 ## 在线预览
 
-点击前往演示站：[https://demo.buildadmin.com](https://demo.buildadmin.com) <br>
+点击前往演示站：[https://d.xinadmin.cn](https://d.xinadmin.cn) <br>
 账户：admin <br>
 密码：123456 <br>
 :::info{title=提示}
