@@ -22,7 +22,7 @@ export default defineConfig({
         },
         {
           title: 'Laravel 版文档',
-          link: '/laravel/dev',
+          link: '/laravel/guide',
         },
         {
           title: 'Think 版文档',

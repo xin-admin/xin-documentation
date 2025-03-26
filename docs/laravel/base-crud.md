@@ -1,7 +1,7 @@
 ---
 group: 基础教程
 title: CRUD
-order: 0
+order: 2
 ---
 
 # CRUD 基础

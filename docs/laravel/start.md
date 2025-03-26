@@ -3,8 +3,6 @@ title: 快速上手
 order: 2
 ---
 
-# 快速上手指南
-
 ## 技术栈概览
 
 XinAdmin 项目采用现代全栈技术架构：
@@ -242,6 +240,14 @@ pnpm run dev
 ```
 
 自此，你可以通过 http://127.0.0.1:3000 来访问你的项目
+
+:::info
+在前后端分离开发的模式下，我们建议你保持本地环境作为开发环境，并通过 `php artisan serve` 和 `pnpm run dev` 来启动本地项目作为开发环境，如果需要部署请参考[部署环节](/laravel/deployment)
+:::
+
+:::warning
+在服务器端使用 `php artisan serve` 和 `pnpm run dev` 启动项目会造成服务器性能浪费，请打包前端代码，并使用 nginx 或者 apache 来部署。具体参考[部署环节](/laravel/deployment)
+:::
 
 ## 常见问题
 

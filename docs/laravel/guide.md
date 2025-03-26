@@ -3,8 +3,6 @@ title: 序言
 order: 0
 ---
 
-# 序言
-
 ## 项目介绍
 
 ✨✨✨ XinAdmin （laravel） 是一个基于 Laravel 框架的快速开发后台管理系统，采用前后端分离架构，前端使用 UmiJs 框架，数据库使用 Mysql，支持国际化。
