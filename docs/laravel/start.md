@@ -1,6 +1,7 @@
 ---
 title: 快速上手
 order: 2
+description: XinAdmin文档 - 快速上手 XinAdmin
 ---
 
 ## 技术栈概览

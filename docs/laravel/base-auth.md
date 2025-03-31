@@ -4,6 +4,7 @@ group:
   order: 5
 title: 菜单权限
 order: 1
+description: XinAdmin文档 - XinAdmin 实现了非常强大的路由与权限模块。
 ---
 
 XinAdmin 实现了非常强大的路由与权限模块。
@@ -101,8 +102,7 @@ export default () => {
 ```tsx | pure
 <ButtonAccess auth={'user.edit'}>
   <Button type="primary" onClick={() => {}}>
-    {' '}
-    编辑用户信息{' '}
+    编辑用户信息
   </Button>
 </ButtonAccess>
 ```

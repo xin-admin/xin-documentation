@@ -8,6 +8,13 @@ export default defineConfig({
   locales: [
     {id: 'zh-CN', name: '中文', suffix: ''},
   ],
+  sitemap: {
+    hostname: 'https://xinadmin.cn',
+  },
+  metas: [
+    { name: 'keywords', content: 'Laravel后台,XinAdmin,xinadmin,xin-admin,开源管理系统,UmiJs,前后端分离,免费后台系统' },
+    { name: 'description', content: 'XinAdmin是基于Laravel和UmiJs的免费开源后台管理系统，支持前后端分离、国际化、权限管理、AI集成等功能，适合快速开发企业级应用' },
+  ],
   themeConfig: {
     socialLinks: {
       github: 'https://github.com/xin-admin',

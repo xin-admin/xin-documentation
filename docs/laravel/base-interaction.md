@@ -2,6 +2,7 @@
 group: 基础教程
 title: 系统交互
 order: 0
+description: XinAdmin文档 - XinAdmin 封装了一整套的请求与响应，使得开发者在前后端的请求中如鱼得水。
 ---
 
 XinAdmin 封装了一整套的请求与响应，使得开发者在前后端的请求中如鱼得水。

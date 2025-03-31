@@ -1,6 +1,7 @@
 ---
 title: 环境准备
 order: 1
+description: XinAdmin文档 - XinAdmin 本章为开发环境准备，我们建议你在预览或者开发过程中始终是再本地开发环境中使用项目，如果需要部署项目，请参考部署章节。
 ---
 
 :::info

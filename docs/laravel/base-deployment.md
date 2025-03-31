@@ -2,6 +2,7 @@
 group: 基础教程
 title: 生产部署
 order: 8
+description: XinAdmin文档 - XinAdmin 部署，当您准备好将 `XinAdmin` 应用程序部署到`生产环境`时，您可以采取一些重要措施来确保您的应用程序尽可能高效地运行。
 ---
 
 当您准备好将 `XinAdmin` 应用程序部署到`生产环境`时，您可以采取一些重要措施来确保您的应用程序尽可能高效地运行。
@@ -125,6 +126,7 @@ location / {
    ```
 
 2. 修改前端项目目录中的`.env` 文件，将`DOMAIN` 修改为`/index.php` 。
+
    ```markdown
    # DOMAIN 请求地址，在开发环境中使用本地服务器地址，在线上部署时：
 
@@ -134,6 +136,7 @@ location / {
 
    DOMAIN='/index.php'
    ```
+
 3. 在本地前端项目目录中执行 `pnpm run build` 来打包前端依赖。
 4. 在打包后的静态资源中，你需要将`dist`目录中的文件上传到站点的`public\assets`目录中，如果不存在这个目录请新建。
 5. 将`index.html`文件单独移出到 `public` 目录中。
