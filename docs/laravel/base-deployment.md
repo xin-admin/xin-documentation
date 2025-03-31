@@ -179,4 +179,4 @@ php artisan optimize
 
 ### 使用 Swoole
 
-如果你希望你的项目使用 Swoole 来处理请求，你可以参考 [Swoole 服务](/laravel/base-swooel)。
+如果你希望你的项目使用 Swoole 来处理请求，你可以参考 [Swoole 服务](/laravel/base-swoole#swoole-serve)。

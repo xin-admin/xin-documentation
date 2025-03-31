@@ -82,8 +82,7 @@ XinAdmin 实现了非常强大的路由与权限模块。
 export default () => {
   return (
     <Button type="primary" onClick={() => {}}>
-      {' '}
-      编辑用户信息{' '}
+      编辑用户信息
     </Button>
   );
 };
