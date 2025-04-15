@@ -60,9 +60,6 @@ https://github.com/xin-admin/xin-laravel
   <ul>
     <li> app <small>应用程序目录，包含应用程序的核心代码</small>
       <ul>
-        <li>Attribute <small>注解目录，包含框架注解核心类</small>
-          <ul></ul>
-        </li>
         <li>Enum <small>枚举类</small>
           <ul></ul>
         </li>
@@ -92,13 +89,7 @@ https://github.com/xin-admin/xin-laravel
         <li>Models <small>模型目录</small>
           <ul></ul>
         </li>
-        <li>Providers <small>服务提供商目录</small>
-          <ul></ul>
-        </li>
         <li>Service <small>服务类目录</small>
-          <ul></ul>
-        </li>
-        <li>Trait <small>Trait目录</small>
           <ul></ul>
         </li>
         <li>helpers.php <small>公共文件</small></li>
@@ -107,6 +98,7 @@ https://github.com/xin-admin/xin-laravel
     <li> bootstrap <ul></ul> </li>
     <li> config <small>配置目录，该目录包含应用程序的所有配置文件</small> <ul></ul></li>
     <li> database <small>数据库目录，该目录包含您的数据库迁移、模型工厂和种子。</small> <ul></ul></li>
+    <li> extends <small>扩展目录，该目录是系统扩展的目录。</small> <ul></ul></li>
     <li> public <small>公共目录，该文件是进入应用程序的所有请求的入口点。</small> <ul></ul></li>
     <li> resources <small>资源目录</small> <ul></ul></li>
     <li> routes <small>路由目录，该目录包含应用程序的所有路由定义。</small> <ul></ul></li>
