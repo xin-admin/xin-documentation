@@ -13,7 +13,7 @@ XinAdmin 基于 `Laravel` 的 `认证` 与 [Laravel Sanctum](https://laravel.com
 - 用户认证：用户通过登录，来获取系统颁发的 API 令牌，令牌拥有 [菜单和权限](/laravel/base-auth)中的 `key` 的能力。
 - 页面权限：表示对前端某一个页面的访问，在菜单中的 `key` 为 `admin.list`，对应的页面路由为：`/admin/list`，系统对全局页面增加了 `PageAccess` 组件来控制页面的访问。
 - 按钮权限：通过[菜单和权限](/laravel/base-auth)中的 `key`，表示对前端某一个`操作按钮`或者某一块`视图区域`的访问控制，你可以使用 `ButtonAccess` 组件来控制按钮的访问权限。
-- 接口权限：`api:{key}`，如 `api:user:list` 表示对 `user` 接口的访问权限。
+- 接口权限：`api.{key}`，如 `api.user.list` 表示对 `user` 接口的 `查询列表` 访问权限。
 
 ## 用户认证
 
