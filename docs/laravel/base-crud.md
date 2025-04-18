@@ -1,6 +1,6 @@
 ---
 group: 基础教程
-title: CRUD
+title: CRUD 代码生成
 order: 2
 ---
 

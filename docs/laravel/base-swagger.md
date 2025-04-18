@@ -1,6 +1,6 @@
 ---
 group: 基础教程
-title: Swagger
+title: Swagger 文档
 order: 8
 description: XinAdmin文档 - Swagger 文档，XinAdmin 使用 php-swagger 生成版本 3.0 或 3.1 中的 OpenAPI 文档。
 ---

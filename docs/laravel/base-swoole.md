@@ -1,6 +1,6 @@
 ---
 group: 基础教程
-title: Swoole
+title: 高性能服务 Swoole
 order: 9
 description: XinAdmin文档 - Swoole，如果你希望使用 Swoole 来提高应用的性能，可以参考本章节。
 ---
