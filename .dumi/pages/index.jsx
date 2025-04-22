@@ -2,165 +2,27 @@ import React from 'react';
 import './index.less';
 import {Card, Col, ConfigProvider, Row, Space, Typography} from 'antd';
 import {createFromIconfontCN} from '@ant-design/icons';
-import thinkphp from '../../static/logo/thinkphp.png';
-import buildadmin from '../../static/logo/buildadmin.png';
-import laravel from '../../static/logo/laravel.png';
-import thinklogo from '../../static/logo/think.svg';
-import tarologo from '../../static/logo/taro-logo.png';
-import taro from '../../static/logo/taro.png';
-import antd from '../../static/logo/antd.png';
-import umi from '../../static/logo/umi.png';
+import logos from './logos';
+import versions from "./versions";
+import cardData from './cardData';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: ['//at.alicdn.com/t/c/font_1930408_25cmzfo9vn3.js']
 });
 
 const {Text} = Typography;
-const Index = () => {
 
-  const logos = [
-    {
-      logo: laravel,
-      link: 'https://laravel.com/'
-    },
-    {
-      logo: thinkphp,
-      link: 'https://www.thinkphp.cn/'
-    },
-    {
-      logo: taro,
-      link: 'https://taro.zone/'
-    },
-    {
-      logo: antd,
-      link: 'https://ant.design'
-    },
-    {
-      logo: umi,
-      link: 'https://umijs.org/'
-    },
-    {
-      logo: buildadmin,
-      link: 'https://buildadmin.com/'
-    }
-  ]
+const BlockTitle = (props) => (
+  <>
+    <h1 style={{textAlign: 'center', marginTop: 100, marginBottom: 20}}> {props.title} </h1>
+    <div style={{textAlign: 'center', marginBottom: 40}}>
+      <Text type="secondary">{props.description}</Text>
+    </div>
+  </>
+)
 
-  const cardData = [
-    {
-      id: 1,
-      title: '全栈技术融合',
-      content: '前端 React + Umi 企业级架构，后端 Laravel/ThinkPHP 双引擎接入，Taro 移动多端统一编译。',
-      iconName: 'icon-kuangjia'
-    },
-    {
-      id: 2,
-      title: '统一开发范式',
-      content: '前后端 API 标准化对接，API 文档一键生成，UI前端与Taro Request 完全兼容，开发更便利快捷。',
-      iconName: 'icon-a-Group801'
-    },
-    {
-      id: 3,
-      title: '性能优化矩阵',
-      content: '高性能、高并发 Swoole 开箱即用，服务端预渲染(SSR)支持，请求、缓存多重优化，免去性能焦虑。',
-      iconName: 'icon-paidui'
-    },
-    {
-      id: 4,
-      title: '前后端分离',
-      content: '前后端代码完全分离，代码互不干扰，团队协作开发更方便，助力业务逻辑实现。',
-      iconName: 'icon-a-Group789'
-    },
-    {
-      id: 5,
-      title: 'CRUD 代码生成',
-      content: '可视化设计前端表格、搜索、表单页面，一键生成后台增删改查代码，自动创建数据表，可为你节省大量时间。',
-      iconName: 'icon-a-Group808'
-    },
-    {
-      id: 6,
-      title: '企业级开发框架',
-      content: '基于 PHP8.2 和 TypeScript，丰富的IDE支持，强大且实用，可用于大型商业化项目，并且完全开源免费。',
-      iconName: 'icon-jiagou'
-    },
-  ]
+export default () => {
 
-  const versions = [
-    {
-      versions: '',
-      title: 'Laravel 版本',
-      logo: 'https://laravel.com/img/logomark.min.svg',
-      contents: [
-        'Xin Admin 的 Laravel 版本。',
-        'Laravel 清晰、简洁的代码结构。',
-        '代码组织与模块化开发体验。',
-        '完善的社区支持与丰富的开发文档。',
-        '开发支持多语言。',
-        '强大代码生成器。',
-      ],
-      github: {
-        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-laravel?style=flat&logo=github&logoColor=red&labelColor=%23f3f5f8&color=red',
-        url: 'https://github.com/xin-admin/xin-laravel'
-      },
-    },
-    {
-      versions: '',
-      title: 'Think 版本',
-      logo: thinklogo,
-      contents: [
-        'Xin Admin 的 Think 版本。',
-        '优越的性能与接口访问速度。',
-        '轻量级开发框架，便捷使用。',
-        '在国内有良好的文档和基础。',
-        '开发支持多语言。',
-        '强大代码生成器。'
-      ],
-      github: {
-        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-think?style=flat&logo=github&logoColor=%23009e3c&labelColor=%23f3f5f8&color=%23009e3c',
-        url: 'https://github.com/xin-admin/xin-think'
-      },
-    },
-    {
-      versions: '',
-      title: 'Taro 多端小程序',
-      logo: tarologo,
-      contents: [
-        'Xin Admin 的 Taro 前端示例。',
-        '支持包括鸿蒙在内的小程序框架。',
-        '开放式跨端跨框架解决方案。',
-        '一套代码就能够适配到多端的能力。',
-        '与后台前端接口吻合，互通使用。',
-        '完善的TS开发体验。'
-      ],
-      github: {
-        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-taro?style=flat&logo=github&logoColor=%231183c4&labelColor=%23f3f5f8',
-        url: 'https://github.com/xin-admin/xin-taro'
-      },
-    },
-    {
-      versions: '',
-      title: '文档仓库',
-      logo: 'https://file.xinadmin.cn/file/favicons.ico',
-      contents: [
-        'Xin Admin 的 文档仓库。',
-        '基于 Dumi 开发的静态文档站。',
-        '内置全文搜索，更好的编译性能。',
-        '欢迎大家共享开发文档与纠错。'
-      ],
-      github: {
-        icon: 'https://img.shields.io/github/stars/xin-admin%2Fxin-documentation?style=flat&logo=github&logoColor=%231677ff&labelColor=%23f3f5f8&color=%231677ff',
-        url: 'https://github.com/xin-admin/xin-documentation'
-      },
-    }
-  ]
-
-  const blockTitle = (title, description) => (
-    <>
-      <h1 style={{textAlign: 'center', marginTop: 100, marginBottom: 20}}> {title} </h1>
-      <div style={{textAlign: 'center', marginBottom: 40}}>
-        <Text type="secondary">{description}</Text>
-      </div>
-    </>
-  )
 
   return (
     <ConfigProvider
@@ -173,8 +35,7 @@ const Index = () => {
         },
       }}
     >
-      <video src="https://file.xinadmin.cn/file/6f00b0cbbbbc2f1c714db7bd7f8a8d52.mp4" className={'index-video'} muted
-             autoPlay loop/>
+      <video src="https://file.xinadmin.cn/file/6f00b0cbbbbc2f1c714db7bd7f8a8d52.mp4" className={'index-video'} muted autoPlay loop/>
       <div className={'index-body'}>
         <div className={'index-banner'}>
           <h1>Xin Admin</h1>
@@ -205,7 +66,8 @@ const Index = () => {
           ))}
         </Row>
 
-        {blockTitle('软件仓库', '包含系列版本仓库、文档仓库以及其它分支仓库。')}
+        <BlockTitle title={'软件仓库'} description={'包含系列版本仓库、文档仓库以及其它分支仓库。'} />
+
         <Row gutter={[20, 20]} style={{padding: '0 30px'}}>
           {versions.map((item) => (
             <Col key={item.id} xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
@@ -236,38 +98,39 @@ const Index = () => {
           ))}
         </Row>
 
-        {blockTitle('赞助与鸣谢', '赞助商招商联系QQ：2302563948，备注来意')}
-        <div style={{margin: '0 20px', background: '#fff', padding: '40px 20px', borderRadius: '8px'}}>
-          <Row justify="space-between" className={'logo-group'}>
-            {logos.map((data, index) => {
-              return (
-                <Col className={'logos'} key={index}>
-                  <a href={data.link} target="_blank">
-                    <div style={{backgroundImage: 'url(' + data.logo + ')'}} className={'logo'}></div>
-                  </a>
-                </Col>
-              )
-            })}
-          </Row>
+        <BlockTitle title={'生态系统项目'} description={'感谢为 XinAdmin 的诞生做出杰出贡献的优秀生态项目'} />
+
+        <div className={'logo-group'}>
+          {logos.map((item, index) => (
+            <div className={'logos'} key={index}>
+              <a href={item.link} target="_blank">
+                <img src={item.logo} height="40" alt={item.link}/>
+              </a>
+            </div>
+          ))}
         </div>
-        <h1 style={{textAlign: 'center', marginTop: 60, marginBottom: 0}}> 反馈与共建 </h1>
-        <div style={{textAlign: 'center', marginBottom: 20}}>
-          <Text type="secondary">如果你在使用过程中有任何问题，都可以加入我们的官方qq群来解答</Text>
-        </div>
+
+        <BlockTitle title={'反馈与赞助'} description={'如果你在使用过程中有任何问题，都可以加入我们的官方qq群来解答'} />
+
         <div className={'feedback'}>
           <div>
-            <img src="https://file.xinadmin.cn/file/qqchat.jpg" height="200" alt="qq群"/>
+            <img src="https://file.xinadmin.cn/file/qqchat.jpg" height="280" alt="官方交流QQ群"/>
             <p>官方交流QQ群</p>
           </div>
           <div>
-            <img src="https://file.xinadmin.cn/file/wechat.png" height="200" alt="微信公众号"/>
+            <img src="https://file.xinadmin.cn/file/wechat.png" height="280" alt="微信公众号"/>
             <p>微信公众号</p>
+          </div>
+          <div>
+            <img src="https://xinadmin.oss-cn-beijing.aliyuncs.com/file/wxPay.jpg" height="280" alt="微信赞助"/>
+            <p>微信赞助</p>
+          </div>
+          <div>
+            <img src="https://xinadmin.oss-cn-beijing.aliyuncs.com/file/aliPay.jpg" height="280" alt="支付宝赞助"/>
+            <p>支付宝赞助</p>
           </div>
         </div>
       </div>
     </ConfigProvider>
   );
 };
-
-
-export default Index;
